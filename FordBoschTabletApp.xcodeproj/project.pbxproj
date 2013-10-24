@@ -21,6 +21,9 @@
 		5CA284EB1819C78A00E1A029 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CA284CD1819C78A00E1A029 /* UIKit.framework */; };
 		5CA284F31819C78B00E1A029 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5CA284F11819C78B00E1A029 /* InfoPlist.strings */; };
 		5CA284F51819C78B00E1A029 /* FordBoschTabletAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CA284F41819C78B00E1A029 /* FordBoschTabletAppTests.m */; };
+		5CA287C81819CB5500E1A029 /* Documentation.html in Resources */ = {isa = PBXBuildFile; fileRef = 5CA286E71819CB5400E1A029 /* Documentation.html */; };
+		5CA287C91819CB5500E1A029 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CA286E91819CB5400E1A029 /* GCDAsyncSocket.m */; };
+		5CA287CA1819CB5500E1A029 /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CA286EB1819CB5400E1A029 /* GCDAsyncUdpSocket.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,11 @@
 		5CA284F01819C78B00E1A029 /* FordBoschTabletAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FordBoschTabletAppTests-Info.plist"; sourceTree = "<group>"; };
 		5CA284F21819C78B00E1A029 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5CA284F41819C78B00E1A029 /* FordBoschTabletAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FordBoschTabletAppTests.m; sourceTree = "<group>"; };
+		5CA286E71819CB5400E1A029 /* Documentation.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Documentation.html; sourceTree = "<group>"; };
+		5CA286E81819CB5400E1A029 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
+		5CA286E91819CB5400E1A029 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
+		5CA286EA1819CB5400E1A029 /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
+		5CA286EB1819CB5400E1A029 /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +109,7 @@
 		5CA284C81819C78A00E1A029 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5CA286E61819CB5400E1A029 /* GCD */,
 				5CA284C91819C78A00E1A029 /* Foundation.framework */,
 				5CA284CB1819C78A00E1A029 /* CoreGraphics.framework */,
 				5CA284CD1819C78A00E1A029 /* UIKit.framework */,
@@ -150,6 +159,18 @@
 				5CA284F11819C78B00E1A029 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5CA286E61819CB5400E1A029 /* GCD */ = {
+			isa = PBXGroup;
+			children = (
+				5CA286E71819CB5400E1A029 /* Documentation.html */,
+				5CA286E81819CB5400E1A029 /* GCDAsyncSocket.h */,
+				5CA286E91819CB5400E1A029 /* GCDAsyncSocket.m */,
+				5CA286EA1819CB5400E1A029 /* GCDAsyncUdpSocket.h */,
+				5CA286EB1819CB5400E1A029 /* GCDAsyncUdpSocket.m */,
+			);
+			path = GCD;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,6 +232,7 @@
 			knownRegions = (
 				en,
 				Base,
+				English,
 			);
 			mainGroup = 5CA284BD1819C78A00E1A029;
 			productRefGroup = 5CA284C71819C78A00E1A029 /* Products */;
@@ -231,6 +253,7 @@
 				5CA284E21819C78A00E1A029 /* Images.xcassets in Resources */,
 				5CA284D41819C78A00E1A029 /* InfoPlist.strings in Resources */,
 				5CA284DD1819C78A00E1A029 /* Main.storyboard in Resources */,
+				5CA287C81819CB5500E1A029 /* Documentation.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +272,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CA287C91819CB5500E1A029 /* GCDAsyncSocket.m in Sources */,
+				5CA287CA1819CB5500E1A029 /* GCDAsyncUdpSocket.m in Sources */,
 				5CA284E01819C78A00E1A029 /* ViewController.m in Sources */,
 				5CA284DA1819C78A00E1A029 /* AppDelegate.m in Sources */,
 				5CA284D61819C78A00E1A029 /* main.m in Sources */,
